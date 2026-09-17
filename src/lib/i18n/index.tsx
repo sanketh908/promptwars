@@ -4,12 +4,14 @@ import { en } from './locales/en'
 import { hi } from './locales/hi'
 import { bn } from './locales/bn'
 import { te } from './locales/te'
+import { kn } from './locales/kn'
 
 export const LOCALES: Record<string, Translation> = {
   en,
   hi,
   bn,
   te,
+  kn,
 }
 
 export type LanguageCode = keyof typeof LOCALES
