@@ -11,6 +11,8 @@ Built for the **Google "Build with AI" hackathon (PromptWars x SDMC)**.
 - **Election Journey** — an interactive, plain-language timeline of the six stages of an election (Nomination → Campaigning → Voter Registration → Polling Day → Counting → Results).
 - **Voting Simulator** — a guided, four-step mock voting flow (registration check → polling booth → cast vote → results) with a live bar chart of your simulated tallies. One vote per browser, stored in `localStorage`; a reset button restarts the demo from scratch.
 - **FAQ** — plain-language answers to the questions first-time voters ask most.
+- **Dark / light mode** — toggle in the header, defaults to system preference, remembered via `localStorage`.
+- **Language switcher** — English, Hindi, Bengali, and Telugu today; the architecture (a single `Translation` type per language) makes adding more a data-only change.
 
 Everything is a simulation for educational purposes only and does not represent a real election.
 

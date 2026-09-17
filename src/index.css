@@ -1,11 +1,13 @@
 @import 'tailwindcss';
 
+/* Dark mode is toggled by adding .dark to <html>, not just prefers-color-scheme. */
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --font-sans: 'Manrope', system-ui, 'Segoe UI', sans-serif;
 
   --color-civic-blue: #1d4ed8;
   --color-civic-blue-dark: #1e3a8a;
-  --color-civic-violet: #7c3aed;
   --color-civic-ink: #0f172a;
   --color-civic-mist: #f8fafc;
 }
@@ -14,10 +16,17 @@
   color-scheme: light;
 }
 
+:root.dark {
+  color-scheme: dark;
+}
+
+html {
+  /* Larger base size for readability — 1rem utilities scale up with it. */
+  font-size: 18px;
+}
+
 body {
   margin: 0;
-  background: var(--color-civic-mist);
-  color: var(--color-civic-ink);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
 }
